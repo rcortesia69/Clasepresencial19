@@ -4,10 +4,10 @@ attr_writer :name
         @name = name
     end
     def self.saludar
-        "Hola! Soy la clase #{@name}"
+        "Hola! Soy la clase #{self}"
     end
 end
 c = MiClase.new('Clase Uno')
 puts c
-MiClase.name = 'Nombre Nuevo'
+c.name = 'Nombre Nuevo'
 puts MiClase.saludar
